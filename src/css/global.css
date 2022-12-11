@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --text-color: #323238;
+  --bg-color-button-hover: #02799d;
+  --bg-color-button-hover-fill: #fff;
+  --bg-color-button: #e1e1e6;
+  --bg-page: #e5e5e5;
+}
