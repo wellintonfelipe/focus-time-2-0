@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 
 :root {
@@ -12,4 +11,6 @@
   --bg-color-button-hover-fill: #fff;
   --bg-color-button: #e1e1e6;
   --bg-page: #e5e5e5;
+
+  font-size: 62.5%;
 }
