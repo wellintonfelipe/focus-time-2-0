@@ -13,12 +13,70 @@ main {
   justify-self: center;
 }
 
-section.container {
+section {
+  min-width: 82rem;
+  height: 33.6rem;
   display: flex;
-  gap: 2rem;
+  gap: 25rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 1.38rem 1.52rem;
+  cursor: pointer;
 }
 span {
   font-weight: bold;
   font-size: 12.6rem;
   font-family: var(--font-family);
+}
+section div.wrapper {
+  margin: 0 auto;
+}
+
+section div.wrapper #timer {
+  display: flex;
+  gap: 2rem;
+  opacity: 0.8;
+}
+
+section div.wrapper #controllers {
+  display: flex;
+  gap: 2rem;
+  border: 1px solid red;
+  margin-top: 4rem;
+}
+
+section div#cards {
+  width: 31rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2rem;
+}
+
+section div#cards button:nth-child(1) {
+  background-color: var(--bg-color-button);
+  border-radius: 2.4rem;
+  padding: 13px 15px;
+  transition: all 1s;
+}
+
+section div#cards button:nth-child(2) {
+  background-color: var(--bg-color-button);
+  border-radius: 2.4rem;
+  padding: 13px 15px;
+  transition: all 1s;
+}
+section div#cards button:nth-child(3) {
+  background-color: var(--bg-color-button);
+  border-radius: 2.4rem;
+  padding: 13px 15px;
+  transition: all 1s;
+}
+section div#cards button:nth-child(4) {
+  background-color: var(--bg-color-button);
+  border-radius: 2.4rem;
+  padding: 13px 15px;
+  transition: backgound 1s;
 }
