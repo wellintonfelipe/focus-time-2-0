@@ -14,3 +14,18 @@
 
   font-size: 62.5%;
 }
+
+:dark {
+  --font-family: "Roboto", sans-serif;
+  --text-color: #323238;
+  --bg-color-button-hover: #0a3442;
+  --bg-color-button-hover-fill: #fff;
+  --bg-color-button: #29292e;
+  --bg-page: #121214;
+
+  font-size: 62.5%;
+}
+
+.hidden {
+  display: none;
+}
