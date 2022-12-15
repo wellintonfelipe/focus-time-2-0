@@ -2,28 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-size: 62.5%;
+  --font-family: "Roboto", sans-serif;
 }
 
 :root {
-  --font-family: "Roboto", sans-serif;
   --text-color: #323238;
   --bg-color-button-hover: #02799d;
   --bg-color-button-hover-fill: #fff;
   --bg-color-button: #e1e1e6;
   --bg-page: #ffffff;
-
-  font-size: 62.5%;
 }
 
-:dark {
-  --font-family: "Roboto", sans-serif;
-  --text-color: #323238;
+.dark {
+  --text-color: #fff;
   --bg-color-button-hover: #0a3442;
   --bg-color-button-hover-fill: #fff;
   --bg-color-button: #29292e;
   --bg-page: #121214;
-
-  font-size: 62.5%;
 }
 
 .hidden {

@@ -6,6 +6,8 @@ body {
 
   display: grid;
   min-height: 100vh;
+
+  transition: 0.3s;
 }
 
 main {
@@ -34,6 +36,7 @@ button {
 span {
   font-weight: bold;
   font-size: 12.6rem;
+  color: var(--text-color);
   font-family: var(--font-family);
 }
 section div.wrapper {
@@ -86,6 +89,9 @@ section div#cards button:nth-child(4) {
 }
 section div#cards button:hover {
   background: var(--bg-color-button-hover);
+}
+#cards button > svg path {
+  fill: var(--text-color);
 }
 
 #cards button:hover > svg path {
