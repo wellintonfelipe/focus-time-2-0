@@ -7,9 +7,9 @@
   --font-family: "Roboto", sans-serif;
 }
 
-:root {
+.light {
   --text-color: #323238;
-  --bg-color-button-hover: #02799d;
+  --bg-color-button-hover: #0a3442;
   --bg-color-button-hover-fill: #fff;
   --bg-color-button: #e1e1e6;
   --bg-page: #ffffff;
@@ -17,8 +17,8 @@
 
 .dark {
   --text-color: #fff;
-  --bg-color-button-hover: #0a3442;
-  --bg-color-button-hover-fill: #fff;
+  --bg-color-button-hover: #02799d;
+  --bg-color-button-hover-fill: #121214;
   --bg-color-button: #29292e;
   --bg-page: #121214;
 }

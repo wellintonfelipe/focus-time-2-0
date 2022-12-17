@@ -1,1 +1,2 @@
-import "./js/script.js";
+import "./js/theme.js";
+import "./js/app.js";
