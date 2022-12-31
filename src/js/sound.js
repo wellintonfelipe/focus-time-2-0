@@ -1,24 +1,43 @@
-// const sound = new Audio({
-//   url: ["https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"],
-//   volume: 5.0,
-//   onend: () => {
-//     alert("We finished with the setup!");
-//   },
-// });
+const audioPlay = document.querySelector("#playSong");
+const playPause = document.querySelector("#button-stop");
+const volControl = document.querySelector("#vol-control");
 
-// sound.play();
-const src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
-const btnAudio = document.querySelector("#audio");
+export function Songs() {
+  const audio = [
+    "../src/audios/Floresta.wav",
+    "../src/audios/Cafeteria.wav",
+    "../src/audios/Chuva.wav",
+    "../src/audios/Lareira.wav",
+  ];
 
-export function Audios() {
-  const ledZeppelim = new Audio(src);
-  const bgAudio = new Audio(src);
-
-  bgAudio.loop = true;
-
-  function play() {
-    ledZeppelim.play();
+  function setVolume(value) {
+    song.volume = value / 100;
   }
 
-  return { play, bgAudio };
+  return {
+    audio,
+    setVolume,
+  };
 }
+
+const { audio, setVolume, isOnOff } = Songs();
+const [Floresta, Cafeteria, Chuva, Lareira] = audio;
+
+const song = new Audio(Floresta);
+
+audioPlay.addEventListener("click", () => {
+  song.play();
+});
+
+playPause.addEventListener("click", () => {
+  console.log("click");
+  song.pause();
+});
+
+volControl.oninput = () => {
+  setVolume(volControl.value);
+};
+
+volControl.onchenge = () => {
+  setVolume(volControl.value);
+};

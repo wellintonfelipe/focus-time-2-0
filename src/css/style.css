@@ -10,23 +10,17 @@ body {
   transition: 1s;
 }
 
-main {
+#app {
   align-self: center;
   justify-self: center;
+  display: flex;
+  gap: 19.2rem;
 }
 body > .theme {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-
-section {
-  min-width: 82rem;
-  height: 33.6rem;
-  display: flex;
-  gap: 25rem;
-}
-
 button {
   border: none;
   background-color: transparent;
@@ -39,34 +33,47 @@ span {
   color: var(--text-color);
   font-family: var(--font-family);
 }
-section div.wrapper {
+#app div.wrapper {
   margin: 0 auto;
 }
 
-section div.wrapper #timer {
+#app div.wrapper #timer {
   display: flex;
   gap: 2rem;
   opacity: 0.8;
 }
 
-section div.wrapper #controllers {
+#app .wrapper #controllers {
   display: flex;
   gap: 2rem;
   margin-top: 4rem;
 }
 
-section div#cards {
+#app #cards {
   width: 31rem;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
 }
-main #cards > button {
+#app #cards .card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  width: 13.8rem;
+  height: 15.2rem;
   gap: 2rem;
-  flex-direction: column;
+
+  border-radius: 2.4rem;
+  background-color: var(--bg-color-button);
+
+  transition: all 1s;
+}
+
+#app #cards .card > button,
+#app #cards .card > input {
+  margin: 0 auto;
 }
 /* input radio */
 
@@ -94,40 +101,14 @@ input[type="range"] {
   background-repeat: no-repeat;
 }
 
-section div#cards button:nth-child(1) {
-  background-color: var(--bg-color-button);
-  border-radius: 2.4rem;
-  padding: 13px 15px;
-  transition: all 1s;
-}
-
-section div#cards button:nth-child(2) {
-  background-color: var(--bg-color-button);
-  border-radius: 2.4rem;
-  padding: 13px 15px;
-  transition: all 1s;
-}
-section div#cards button:nth-child(3) {
-  background-color: var(--bg-color-button);
-  border-radius: 2.4rem;
-  padding: 13px 15px;
-  transition: all 1s;
-}
-section div#cards button:nth-child(4) {
-  background-color: var(--bg-color-button);
-  border-radius: 2.4rem;
-  padding: 13px 15px;
-  transition: background 1s;
-}
-section div#cards button:hover {
+#app #cards .card:hover,
+#cards .card:hover button > svg path {
   background: var(--bg-color-button-hover);
-}
-#cards button > svg path {
-  fill: var(--text-color);
+  fill: var(--bg-color-button);
 }
 
-#cards button:hover > svg path {
-  fill: white;
+#cards .card button > svg path {
+  fill: var(--text-color);
 }
 
 input[type="range"]:hover {
@@ -151,4 +132,10 @@ input[type="”range”"]:hover {
   cursor: pointer;
   box-shadow: 0 0 2px 0 #555;
   transition: background 0.3s ease-in-out;
+}
+
+.pressButton {
+  background-color: var(--bg-color-button-hover) !important;
+  transition: background 1s !important;
+  fill: var(--text-color) !important;
 }

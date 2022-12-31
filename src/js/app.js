@@ -1,11 +1,7 @@
-import { Audios } from "./sound.js";
-
 const btnPlay = document.querySelector("#button-play");
 
 const minutsDisplay = document.querySelector("#minutes");
 const secondsDisplay = document.querySelector("#seconds");
-
-const { play } = Audios();
 
 let minuts;
 let timer;

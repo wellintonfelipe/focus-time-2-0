@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="./src/css/style.css" />
 
     <script type="module" src="./src/index.js" defer></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"
-      defer
-    ></script>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
@@ -32,36 +28,36 @@
     </button>
 
     <main id="app">
-      <section>
-        <div class="wrapper">
-          <div id="timer">
-            <span id="minutes">25</span>
-            <span>:</span>
-            <span id="seconds">00</span>
-          </div>
-          <div id="controllers">
-            <button id="button-play">
-              <img src="./src/img/control-play.svg" alt="button play" />
-            </button>
-            <button id="button-stop">
-              <img src="./src/img/control-stop.svg" alt="button stop" />
-            </button>
-            <button>
-              <img
-                src="./src/img/control-increment.svg"
-                alt="button inclement time"
-              />
-            </button>
-            <button>
-              <img
-                src="./src/img/control-decrement.svg"
-                alt="button decrement time"
-              />
-            </button>
-          </div>
+      <div class="wrapper">
+        <div id="timer">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
         </div>
-        <div id="cards">
-          <button id="audio">
+        <div id="controllers">
+          <button id="button-play">
+            <img src="./src/img/control-play.svg" alt="button play" />
+          </button>
+          <button id="button-stop">
+            <img src="./src/img/control-stop.svg" alt="button stop" />
+          </button>
+          <button>
+            <img
+              src="./src/img/control-increment.svg"
+              alt="button inclement time"
+            />
+          </button>
+          <button>
+            <img
+              src="./src/img/control-decrement.svg"
+              alt="button decrement time"
+            />
+          </button>
+        </div>
+      </div>
+      <div id="cards">
+        <div class="card florest" id="playSong">
+          <button>
             <svg
               width="45"
               height="56"
@@ -74,8 +70,10 @@
                 fill="#323238"
               />
             </svg>
-            <input type="range" name="" id="" min="0" max="100%" />
           </button>
+          <input type="range" min="0" max="100" id="vol-control" />
+        </div>
+        <div class="card drizzly">
           <button>
             <svg
               width="53"
@@ -89,8 +87,10 @@
                 fill="#323238"
               />
             </svg>
-            <input type="range" name="" id="" min="0" max="100%" />
           </button>
+          <input type="range" min="0" max="100" id="vol-control" />
+        </div>
+        <div class="card coffe">
           <button>
             <svg
               width="56"
@@ -104,8 +104,10 @@
                 fill="#323238"
               />
             </svg>
-            <input type="range" name="" id="" min="0" max="100%" />
           </button>
+          <input type="range" min="0" max="100" id="vol-control" />
+        </div>
+        <div class="card fireplace">
           <button>
             <svg
               width="48"
@@ -119,10 +121,10 @@
                 fill="#323238"
               />
             </svg>
-            <input type="range" name="" id="" min="0" max="100%" />
           </button>
+          <input type="range" min="0" max="100" id="vol-control" />
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
