@@ -1,6 +1,7 @@
 const btnPlay = document.querySelector("#button-play");
 const btnStop = document.querySelector("#button-stop");
 const btnPause = document.querySelector(".button-pause");
+const controllers = document.querySelector("#controllers");
 
 const bntPaused = document.querySelector("#button-stop");
 const bntIncrement = document.querySelector("#increment");
@@ -39,15 +40,6 @@ function contDown() {
   }, 1000);
 }
 
-function startDisplay() {
-  btnPlay.innerHTML = `<img src="./src/img/pause.svg" alt="button pause" />`;
-  bntPaused.innerHTML = `<img src="./src/img/control-stop.svg" alt="button stop" />`;
-}
-
-function resetDisplay() {
-  bntPaused.innerHTML = `<img src="./src/img/set-time.svg" alt="button pause" />`;
-  btnPlay.innerHTML = `<img src="./src/img/control-play.svg" alt="button play" />`;
-}
 function increment() {
   minutsDisplay.textContent = String(minuts + 5).padStart(2, "0");
 }
@@ -62,7 +54,6 @@ function decrement() {
 
 btnPlay.addEventListener("click", () => {
   timer = prompt("Digite um número: ");
-  startDisplay();
 
   if (!timer) {
     timer = minutsDisplay.textContent;
@@ -72,4 +63,15 @@ btnPlay.addEventListener("click", () => {
 
   contDown();
   minutsDisplay.textContent = String(minuts).padStart(2, "0");
+});
+
+btnStop.addEventListener("click", () => {
+  clearTimeout(setTimer);
+  return;
+});
+
+btnStop.addEventListener("dblclick", () => {
+  minutsDisplay.textContent = String(0).padStart(2, "0");
+  secondsDisplay.textContent = String(0).padStart(2, "0");
+  return;
 });

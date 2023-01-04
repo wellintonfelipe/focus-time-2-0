@@ -105,3 +105,27 @@ inputRangeFirePlace.oninput = () => {
     setVolume(inputRangeFirePlace.value, Lareira);
   };
 };
+
+inputRangeCoffe.oninput = () => {
+  setVolume(inputRangeCoffe.value, Cafeteria);
+
+  inputRangeCoffe.onchenge = () => {
+    setVolume(inputRangeCoffe.value, Cafeteria);
+  };
+};
+
+inputRangeDrizzly.oninput = () => {
+  setVolume(inputRangeDrizzly.value, Chuva);
+
+  inputRangeDrizzly.onchenge = () => {
+    setVolume(inputRangeDrizzly.value, Chuva);
+  };
+};
+
+inputRangeFlorest.oninput = () => {
+  setVolume(inputRangeFlorest.value, Floresta);
+
+  inputRangeFlorest.onchenge = () => {
+    setVolume(inputRangeFlorest.value, Floresta);
+  };
+};
