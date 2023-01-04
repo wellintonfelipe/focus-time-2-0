@@ -4,4 +4,4 @@
 
 `npm run start`
 
-## Rockeseat 💜🚀
+## Rocketseat 💜🚀
