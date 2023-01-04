@@ -26,3 +26,8 @@
 .hidden {
   display: none;
 }
+.pressButton {
+  background-color: var(--bg-color-button-hover) !important;
+  transition: background 1s !important;
+  fill: var(--bg-color-button-hover-fill) !important;
+}

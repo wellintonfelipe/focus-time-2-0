@@ -4,9 +4,17 @@ const btnThemeDark = document.querySelector(".dark-mode");
 const btnThemeLight = document.querySelector(".light-mode");
 
 const darkThemeOn = () => {
-  htmlBody.classList.toggle("dark");
+  btnThemeDark.classList.add("dark");
   btnThemeDark.classList.remove("hidden");
   btnThemeLight.classList.add("hidden");
+  htmlBody.classList.add("dark");
+};
+
+const darkThemeOff = () => {
+  btnThemeDark.classList.add("hidden");
+  btnThemeLight.classList.remove("hidden");
+
+  htmlBody.classList.remove("dark");
 };
 
 btnThemeLight.addEventListener("click", () => {
@@ -14,7 +22,5 @@ btnThemeLight.addEventListener("click", () => {
 });
 
 btnThemeDark.addEventListener("click", () => {
-  htmlBody.classList.remove("dark");
-  btnThemeDark.classList.add("hidden");
-  btnThemeLight.classList.remove("hidden");
+  darkThemeOff();
 });

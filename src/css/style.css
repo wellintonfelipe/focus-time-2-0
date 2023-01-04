@@ -74,6 +74,7 @@ span {
 #app #cards .card > button,
 #app #cards .card > input {
   margin: 0 auto;
+  transition: 2ms all;
 }
 /* input radio */
 
@@ -114,9 +115,9 @@ input[type="range"] {
 input[type="range"]:hover {
   width: 9rem;
   height: 7px;
-  background: var(white);
+  background: var(--text-color);
   border-radius: 5px;
-  background-image: linear-gradient(white, white);
+  background-image: linear-gradient(var(--text-color), var(--text-color));
   background-size: 100%;
 }
 
@@ -126,16 +127,10 @@ input[type="”range”"]:hover {
   -webkit-appearance: none;
   height: 1.2rem;
   width: 1.2rem;
-  border: 1px solid black;
+  border: 1px solid var(--text-color);
   border-radius: 50%;
-  background: white;
+  background: var(--text-color);
   cursor: pointer;
-  box-shadow: 0 0 2px 0 #555;
+  box-shadow: 0 0 2px 0 var(--bg-color-button);
   transition: background 0.3s ease-in-out;
-}
-
-.pressButton {
-  background-color: var(--bg-color-button-hover) !important;
-  transition: background 1s !important;
-  fill: var(--text-color) !important;
 }
